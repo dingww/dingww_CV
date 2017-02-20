@@ -2,96 +2,121 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Della's Resume</title>
-	<link rel="stylesheet" type="text/css" href="css/resume.css">
-	<script type="text/javascript" src="js/jquery-1.7.2.js"></script>
-	<script type="text/javascript" src="js/resumeScript.js"></script>
+	<title>CV of Della</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
 	<div id="lang">
-		<a class="en" href="#">En</a>
-		<a class="cn" href="index.html">中</a>
-	</div>
+		<a class="en" href="#" title="英文版">EN</a> 
+		<a class="cn" href="index.html" title="中文版">中</a>
+	</div>	
 	<div id="container">
 		<div id="main">
-			<div id="intro" class="wrap">
+			<div class="intro wrap">
 				<div class="section">
-					<img src="images/della.jpg" id="avatar" />
-					<p class="title">Wenwan Ding</p>
+					<img src="images/della.jpg" />
+					<h1>Della</h1>
 					<p class="divLine"></p>
-					<p class="position">Web Front-End Developer</p>	
-					<p class="place">Addr:Guangzhou/Wuhan/Hangzhou/Shanghai/Shenzhen</p>
+					<p class="position">Web Front-End Developer</p>
+					<p class="place">Addr: Guangzhou / Wuhan / Hangzhou / Shenzhen</p>
 				</div>
 			</div>
-			<div id="skill" class="wrap">
+			<div class="skills wrap">
 				<div class="section">
-					<p class="title">Professions</p>
+					<h1>Professions</h1>
 					<p class="divLine"></p>
 					<div class="skill">
-						<span class="ht">HTML</span>
-						<span class="cs">CSS</span>
-						<span class="ht5">HTML5</span>
-						<span class="cs3">CSS3</span><br/>
-						<span class="ja">javaScript</span> 
-						<span class="jq">jQuery</span>
-						<span class="bt">Bootstrap</span>
-						<span class="ph">Photoshop</span>
+						<span class="skill-1">HTML</span>
+						<span class="skill-2">CSS</span>
+						<span class="skill-3">HTML5</span><br/>
+						<span class="skill-4">CSS3</span>
+						<span class="skill-5">SASS</span>
+						<span class="skill-6">javaScript</span> 
+						<span class="skill-7">jQuery</span><br/>		
+						<span class="skill-8">php</span>		
+						<span class="skill-9">nodejs</span>		
+						<span class="skill-10">Photoshop</span>
 					</div>
 				</div>
-			</div>
-			<div id="works" class="wrap">
+			</div>	
+			<div class="works wrap">
 				<div class="section">
-					<p class="title">Efforts</p>
+					<h1>Efforts</h1>
 					<p class="divLine"></p>
-					<div class="wLink">				
-						<a href="https://github.com/dingww/practice/tree/master/resume">Resume</a>
-						<a href="https://github.com/dingww/works/tree/master/Component">Components</a><br/>
-						<a class="work" href="https://github.com/dingww/works">Web Pages</a>
-						<a class="work" href="https://github.com/dingww/works">H5 Games</a>	
+					<div class="wLink">			
+						<div class="demos">
+							<div class="title">Web Page</div>
+							<div class="demo demo1">
+								<a target="_blank" href="https://dingww.site/demos/data/webpage/63game/index.html">63game</a>
+								<a target="_blank" href="https://dingww.site/demos/data/webpage/jd/index.html">JD</a>
+								<a target="_blank" href="https://dingww.site/demos/data/webpage/response/index.html">Response</a>		
+								<a target="_blank" href="https://dingww.site/demos/data/webpage/villaHouse/index.html">Villa</a>
+								<a target="_blank" href="https://dingww.site/demos/data/webpage/hospital/index.html">Hospital</a>	
+								<a target="_blank" href="https://dingww.site/demos/data/webpage/ShoppingHome/index.html">JaneShop</a>
+								<a target="_blank" href="https://dingww.site/demos/data/webpage/blog/index.html">Blog</a>
+								<a target="_blank" href="https://dingww.site/demos/data/webpage/fashihui/index.html">FaShiHui</a>
+								<a target="_blank" href="https://dingww.site/demos/data/webpage/exchange/index.html">Exchange</a>
+							</div>							
+						</div>	
+						<div class="demos">
+							<div class="title">Components</div>
+							<div class="demo demo2">
+								<a href="https://dingww.site/demos/data/Component/colors/index.html">Colors</a>
+								<a href="https://dingww.site/demos/data/Component/calendar/index.html">Calendar</a>
+								<a href="https://dingww.site/demos/data/Component/vedioPlayer/index.html">VedioPlayer</a>
+								<a href="https://dingww.site/demos/data/Component/switchBg/index.html">SwitchBG</a>	
+							</div>
+							
+						</div>				
 					</div>	
 				</div>
 			</div>
-			<div id="education" class="wrap">
+			<div class="education wrap">
 				<div class="section">
-					<p class="title">Education</p>
+					<h1>Education</h1>
 					<p class="divLine"></p>
 					<div class="edu">
 						<div class="edu1">
-							<span class="date">Aug. 2014 to Jun. 2017</span>
-							<span class="degree">Graduate Student at</span>
-							<span class="school">Sun Yat-sen University</span><br/>
-							<span class="major">Major in Radio Physics</span>
+							<p class="date">Aug, 2014 ~ Jun, 2017</p>
+							<p class="degree"><span>Graduate Student at </span><span class="school">Sun Yat-sen University</span></p>
+							<p class="major">Major in <em>Radio Physics</em></p>
 						</div> 					
 						<div class="edu2">
-							<span class="date">Sep. 2010 to Jun. 2014</span>
-							<span class="degree" id="deg">Undergraduate Student at</span>
-							<span class="school" id="hb">Hubei Normal University</span><br/>
-							<span class="major">Major in Electronic Information Engineering</span>
+							<p class="date">Sep, 2010 ~ Jun, 2014</p>
+							<p class="degree"><span class="deg">Undergraduate Student at </span><span  class="hb school">Hubei Normal University</span></p>
+							<p class="major">Major in <em>Electronic Information Engineering</em></p>
 						</div> 					
-					</div>
-				</div>
+					</div>	
+				</div>	
 			</div>
-			<div id="more" class="wrap">
+			<div class="more wrap">
 				<div class="section">
-					<p class="title">Contact</p>
+					<h1>Contact</h1>
 					<p class="divLine"></p>
-					<div id="contact">
-						<div class="git"><img src="images/github.png" alt="github" /><a href="https://github.com/dingww/works">Github</a></div>
-						<div class="email"><img src="images/email.png" alt="email" /><span>15521273128@163.com</span></div>
-						<div class="qq"><img src="images/qq.png" alt="email" /><span>1067061570</span></div>			
+					<div class="contact">
+						<div class="know-more">
+							<p><a href="https://github.com/dingww/works">Github</a></p>
+							<p class="csdn"><a href="http://blog.csdn.net/dw1067061570">CSDN</a></p>
+						</div>
+						<div class="email"><span>Email: </span>15521273128@163.com</div>
+						<div class="download"><a href="images/cv.pdf">DownLoad CV</a></div>		
 					</div>
 				</div>	
 			</div>
 		</div>	
 		<div id="nav">
 			<ul class="navList">
-				<li class="intro"><a class="intro" href="#" title="Home"></a></li>
-				<li class="skill"><a class="skill" href="#" title="Skill"></a></li>
-				<li class="works"><a class="works" href="#" title="Efforts"></a></li>
-				<li class="education"><a class="education" href="#" title="Education"></a></li>			
-				<li class="more"><a class="more" href="#" title="Contact"></a></li>			
+				<li class="intro"><a class="intro" href="#"></a><span>Home</span></li>
+				<li class="skills"><a class="skills" href="#"></a><span>Professions</span></li>
+				<li class="works"><a class="works" href="#"></a><span>Efforts</span></li>
+				<li class="education"><a class="education" href="#"></a><span>Education</span></li>			
+				<li class="more"><a class="more" href="#"></a><span>Contact</span></li>	
 			</ul>
-		</div>	
-	</div>	
+		</div>
+		<div class="top"><img src="images/top.png" /></div>		
+	</div>
 </body>
 </html>
+<script type="text/javascript" src="js/jquery.js"></script>
+<!-- <script type="text/javascript" src="js/jquery.mousewheel.min.js"></script> -->
+<script type="text/javascript" src="js/main.js"></script>

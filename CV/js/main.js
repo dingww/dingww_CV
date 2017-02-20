@@ -1,16 +1,16 @@
 $(function() {
-	$('#lang a').hover(function() {
-		$(this).addClass('fbgColor');
-	}, function() {
-		$(this).removeClass('fbgColor');
-	});
 
-	$("#nav li").mouseover(function() {
+
+	$("#nav li").hover(function() {
 		var $index = $(this).index();
 		indexFunc($index);
+		$("#nav li").children('span').css('display', 'none');
+		$(this).children('span').css('display', 'block');
+	}, function() {
+		$("#nav li").children('span').css('display', 'none');
 	});
+	var h = $(window).innerHeight();
 
-	var h = $(window).height();
 	$("#nav li").click(function(event) {
 		$target = event.target.className;
 		var $index = $(this).index();
@@ -22,7 +22,13 @@ $(function() {
 		indexFunc($index);
 	});
 
-	// 使用滚轮事件
+	$('.top').hover(function() {
+		$(this).addClass('topBgc');
+	}, function() {
+		$(this).removeClass('topBgc');
+	});
+
+	//鼠标滚轮事件
 	var flag = 0;
 	var i = 0;
 	$(document).on("mousewheel DOMMouseScroll", function(e) {
@@ -83,6 +89,13 @@ $(function() {
 			indexFunc($index);
 		}
 	});
+	$('.top').click(function(event) {
+		indexFunc(0);
+		$('.wrap').stop().animate({
+			top: 0
+		}, 600);
+		flag = 0;
+	});
 
 	indexFunc(0);
 
@@ -90,5 +103,4 @@ $(function() {
 		$('#nav ul li').removeClass('fbgColor');
 		$('#nav ul li').eq(index).addClass('fbgColor');
 	}
-
 });
