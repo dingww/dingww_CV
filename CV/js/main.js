@@ -1,22 +1,20 @@
 $(function() {
 
-	// // 语言切换	
-	// $('.cn').addClass('fbgColor');
-	// // $('#containerCn').css('display', 'block');
-	// $('#lang a').click(function(event) {
-	// 	$('#lang a').removeClass('fbgColor');
-	// 	$(this).addClass('fbgColor');
-	// 	console.log($(this).attr('class').slice(0, 2));
-	// 	if ($(this).attr('class').slice(0, 1) === 'cn') {
-	// 		$('#containerCn').css('display', 'block');
-	// 		$('#containerEn').css('display', 'none');
-	// 	}
-	// 	if ($(this).attr('class').slice(0, 1) === 'en') {
-	// 		$('#containerCn').css('display', 'none');
-	// 		$('#containerEn').css('display', 'block');
-	// 	}
-	// });
+	// 语言切换	
+	$("#lang").mouseover(function(event) {
 
+		var ex = event.clientX - $(this).position().left;
+		console.log(ex);
+		if (ex < 30) {
+			$('.btn-bg').animate({
+				left: 0 + 'px'
+			}, 200);
+		} else {
+			$('.btn-bg').animate({
+				left: 35 + 'px'
+			}, 200);
+		}
+	});
 
 	//鼠标滚轮事件
 	var flag = 0;
@@ -29,6 +27,8 @@ $(function() {
 		h = winH;
 		$('.wrap').css('top', i * h + 'px');
 	});
+
+	indexFunc(0);
 
 	$(document).on("mousewheel DOMMouseScroll", function(e) {
 		var delta = (e.originalEvent.wheelDelta && (e.originalEvent.wheelDelta > 0 ? 1 : -1)) || // chrome & ie
@@ -100,7 +100,7 @@ $(function() {
 		console.log(i);
 	});
 
-	indexFunc(0);
+
 
 	function indexFunc(index) {
 		$('#nav ul li').removeClass('fbgColor');

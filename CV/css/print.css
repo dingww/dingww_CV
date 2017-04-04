@@ -62,7 +62,7 @@ body {
 
 .section {
   line-height: 26px;
-  margin-top: 29px; }
+  margin-top: 15px; }
   .section h2 {
     color: #3baea0;
     font-size: 22px;
@@ -73,6 +73,7 @@ body {
     letter-spacing: 1px;
     font-weight: 700; }
   .section li {
+    text-align: justify;
     padding-left: 5px;
     margin: 10px 0; }
 
@@ -104,7 +105,7 @@ body {
     font-size: 30px;
     color: #6c6b6b;
     line-height: 50px;
-    margin: 30px 0 5px; }
+    margin: 26px 0 5px; }
   .part h3 {
     color: #3baea0;
     font-size: 20px;
@@ -116,6 +117,8 @@ body {
       color: #3baea0;
       box-sizing: content-box;
       border-bottom: 1px solid #3baea0; }
+  .part .item {
+    text-align: justify; }
   .part .date {
     font-size: 14px;
     letter-spacing: 1px;

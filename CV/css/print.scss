@@ -73,7 +73,7 @@ $color5:#3baea0;
 }
 .section{
 	line-height: 26px;
-	margin-top: 29px;
+	margin-top: 15px;
 	h2{	
 		color: $color5;
 		font-size:22px;
@@ -86,6 +86,7 @@ $color5:#3baea0;
 		font-weight: 700;
 	}
 	li{		
+		text-align: justify;
 		padding-left: 5px;
 		margin: 10px 0;		
 	}
@@ -124,7 +125,7 @@ $color5:#3baea0;
 		font-size: 30px;
 		color:$color4;
 		line-height: 50px;
-		margin: 30px 0 5px;
+		margin: 26px 0 5px;
 	}
 	h3{
 		color: $color5;
@@ -138,6 +139,9 @@ $color5:#3baea0;
 			box-sizing:content-box;
 			border-bottom: 1px solid $color5;			
 		}
+	}
+	.item{
+		text-align: justify;
 	}
 	.date{
 		font-size: 14px;

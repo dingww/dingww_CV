@@ -19,19 +19,40 @@ a:hover {
   color: #f3fb07 !important; }
 
 #lang {
+  width: 65px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 15px;
+  background-color: #b7ecd8;
   display: inline-block;
   position: absolute;
   top: 30px;
   right: 3%;
-  z-index: 100; }
+  z-index: 100;
+  box-sizing: border-box; }
   #lang a {
+    width: 30px;
+    height: 30px;
     font-size: 14px;
+    text-align: center;
     text-decoration: none;
-    color: #2f8886;
-    float: right;
-    border-radius: 2px; }
+    color: #2f8886; }
+  #lang a:hover {
+    color: #2f8886 !important; }
+  #lang .cn {
+    position: absolute;
+    left: 0; }
   #lang .en {
-    margin-left: 10px; }
+    position: absolute;
+    left: 35px; }
+  #lang .btn-bg {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: #f3fb07;
+    position: absolute;
+    left: 0;
+    z-index: -1; }
 
 .fbgColor {
   background-color: #f3fb07; }
@@ -310,11 +331,13 @@ a:hover {
     color: #2f8886 !important; }
 
 #nav ul li span, #nav .top span {
-  width: 100px;
-  height: 25px;
+  height: 20px;
   font-size: 12px;
-  line-height: 25px;
+  line-height: 17px;
+  background-color: #b7ecd8;
   text-align: right;
+  border-radius: 3px;
+  padding: 2px 5px;
   z-index: 10;
   display: none; }
 
@@ -347,8 +370,8 @@ a:hover {
         background-color: transparent !important; }
       #nav ul li span {
         position: absolute;
-        left: -110px;
-        top: -8px; }
+        top: -8px;
+        left: -45px; }
     #nav ul li:first-child {
       margin-top: 0; }
     #nav ul li:hover {
@@ -370,7 +393,7 @@ a:hover {
       left: -3px; }
     #nav .top span {
       position: absolute;
-      left: -110px;
+      left: -65px;
       top: 0px; }
   #nav .top:hover {
     background-color: #f3fb07; }

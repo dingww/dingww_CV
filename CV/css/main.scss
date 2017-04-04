@@ -20,6 +20,7 @@ $color2:#F3FB07;
 $color3:#ffffff;
 $color4:#70cfaf;//#70cfaf
 $color5:#B7ECD8;
+$color6:#edef99;
 // $color6:
 $font-size1: 1rem;
 $font-size2: 1.3rem;
@@ -33,20 +34,44 @@ a:hover{
 	color: $color2 !important;
 }
 #lang{		
+	width:65px;
+	height:30px;
+	line-height: 30px;	
+	border-radius: 15px;	
+	background-color:$color5;
 	display: inline-block;
 	position: absolute;
 	top: 30px;
 	right: 3%;
 	z-index: 100;
+	box-sizing:border-box;
 	a{
-		font-size: 14px;	
+		width:30px;
+		height:30px;
+		font-size: 14px;
+		text-align: center;	
 		text-decoration: none;
-		color: $color1;
-		float: $right;	
-		border-radius: $radius;
+		color: $color1;			
+	}
+	a:hover{
+		color: $color1 !important;
 	}	
+	.cn{
+		position:absolute;
+		left: 0;
+	}
 	.en{
-		margin-left: 10px;		
+		position:absolute;
+		left: 35px;			
+	}
+	.btn-bg{
+		width: 30px;
+		height: 30px;
+		border-radius:15px;
+		background-color:$color2;
+		position:absolute;
+		left: 0;
+		z-index: -1;
 	}
 } 
 .fbgColor{	
@@ -330,19 +355,21 @@ $opacity:0.75,0.8,0.85,0.7,0.85,0.7,0.75,0.6,0.6,0.7;
 		}
 	}
 }
-%span{
-	width: 100px;
-	height: 25px;
+%span{	
+	height: 20px;
 	font-size: 12px;
-	line-height: 25px;
+	line-height: 17px;
+	background-color:$color5;
 	text-align: right;	
+	border-radius:3px;
+	padding:2px 5px;	
 	z-index: 10;
 	display: none;
 }
 #nav{
 	width: 20px;	
 	height: 200px;
-	color: $color1;	
+	color: $color1;		
 	position: fixed;
 	top: 50%;	
 	right: 3%;
@@ -369,10 +396,10 @@ $opacity:0.75,0.8,0.85,0.7,0.85,0.7,0.75,0.6,0.6,0.7;
 				background-color:transparent !important;
 			}
 			span{
-				@extend %span;							
-				position:absolute;
-				left: -110px;				
-				top: -8px;				
+				@extend %span;									
+				position:absolute;								
+				top: -8px;
+				left: -45px;				
 			}
 		}
 		li:first-child{
@@ -380,11 +407,12 @@ $opacity:0.75,0.8,0.85,0.7,0.85,0.7,0.75,0.6,0.6,0.7;
 		}
 		li:hover{
 			background-color:$color2;
-			span{
+			span{								
 				display: block;		
 			}
 		}
 	}
+
 	.top{
 		width: 16px;
 		height:16px;	
@@ -402,7 +430,7 @@ $opacity:0.75,0.8,0.85,0.7,0.85,0.7,0.75,0.6,0.6,0.7;
 		span{
 			@extend %span;				
 			position:absolute;
-			left: -110px;				
+			left: -65px;				
 			top: 0px;		
 		}		
 	}
